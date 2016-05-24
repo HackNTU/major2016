@@ -8,12 +8,40 @@ $(function(){
 var NARDOVE = NARDOVE || {};
 
 NARDOVE.Jelly = function(id, radius, resolution) {
-    this.path = new Path();
+
+		this.cellCenter = new Point({
+		  x: 200,
+		  y: 200
+		});
+
+
+
+    // this.path = new Path();
     this.pathRadius = radius;
     this.pathSides = resolution;
     this.pathPoints = [this.pathSides];
     this.pathPointsNormals = [this.pathSides];
     this.group = new Group();
+
+    this.pathPointsVector = [this.pathSides];
+		this.path = new Path.RegularPolygon(this.cellCenter, this.pathSides, this.pathRadius);
+
+
+		this.antennaNumber =  Math.floor((this.pathSides / 3) * Math.random()) + 3;
+		this.antennas = [this.antennaNumber];
+
+		var antennasNumberCount = 0;
+		while (antennasNumberCount <= this.antennaNumber) {
+		    for (var i = 0; i < this.pathSides; i++) {
+		        if(this.antennas[i] !== 0){
+				        if (Math.random() * 2 > 1) {
+				            this.antennas[i] = 1;
+				            antennasNumberCount++;
+				        }
+		     		}
+		    }
+		}
+
 
     // Colours courtesy of deliquescence:
     // http://www.colourlovers.com/palette/38473/boy_meets_girl
@@ -27,7 +55,7 @@ NARDOVE.Jelly = function(id, radius, resolution) {
     ];
 
     this.pathStyle = {
-        strokeWidth: 5,
+        strokeWidth: 3, // 14
         strokeColor: this.colours[id].s,
         fillColor: this.colours[id].f
     };
@@ -56,6 +84,8 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 
 NARDOVE.Jelly.prototype.init = function() {
     for (var i = 0; i < this.pathSides; i++) {
+/*
+
         var theta = (Math.PI * 2) / this.pathSides;
         var angle = theta * i;
         var x = Math.cos(angle) * this.pathRadius * 0.7;
@@ -71,14 +101,30 @@ NARDOVE.Jelly.prototype.init = function() {
         this.path.add(point);
         this.pathPoints[i] = point.clone();
         this.pathPointsNormals[i] = point.normalize().clone();
+*/
+				this.pathPoints[i] = this.path.segments[i].point.clone();
+        this.pathPointsNormals[i] = this.path.segments[i].point.normalize().clone();
+
+
+		    var vectorCenter = new Point(this.cellCenter.clone());
+		    var vectorPoint = new Point(this.path.segments[i].point.clone());
+
+	    	this.pathPointsVector[i] = new Point(vectorPoint.x - vectorCenter.x, vectorPoint.y - vectorCenter.y).normalize();
+
+
+
     }
+
 
     this.path.closed = true;
     this.path.smooth();
     this.path.style = this.pathStyle;
     this.group.addChild(this.path);
 
+		// this.path.fullySelected = true; // test
 
+
+/*
     // Create tentacles
     this.tentacles = [this.numTentacles];
     for (var t = 0; t < this.numTentacles; t++) {
@@ -87,6 +133,7 @@ NARDOVE.Jelly.prototype.init = function() {
         this.tentacles[t].path.strokeColor = this.path.strokeColor;
         this.tentacles[t].path.strokeWidth = this.path.strokeWidth;
     }
+*/    
 }
 
 
@@ -114,6 +161,7 @@ NARDOVE.Jelly.prototype.update = function(event) {
     // this.path.rotate(this.orientation - this.lastOrientation);
     this.group.rotate(this.orientation - this.lastOrientation);
 
+/*
     // Expansion Contraction
     for (var i = 0; i < this.pathSides; i++) {
         var segmentPoint = this.path.segments[i].point;
@@ -125,11 +173,45 @@ NARDOVE.Jelly.prototype.update = function(event) {
         segmentPoint.y += normalRotatedPoint.y * Math.sin(sineSeed);
     }
 
+*/
+
+		// Expansion Contraction
+		for (var i = 0; i < this.pathSides; i+=1) {
+
+				if (this.antennas[i] === 1) {
+			
+			    var segmentPoint = this.path.segments[i].point;
+
+			    // var normalRotatedPoint = this.pathPointsNormals[i].rotate(this.orientation);
+
+			    var vectorCenter = new Point(this.cellCenter);
+			    var vectorPoint = new Point(this.path.segments[i].point.clone());
+
+		    	var vector = this.pathPointsVector[i].rotate(this.orientation);;
+
+		 		  var sineSeed = (event.count * 0.05); //0.05
+
+
+			    //segmentPoint.x += normalRotatedPoint.x * Math.sin(sineSeed);
+			    //segmentPoint.y += normalRotatedPoint.y * Math.sin(sineSeed);
+
+
+			    var antennaRate = 0.006;
+			    segmentPoint.x += vector.x * Math.sin(sineSeed) * this.pathRadius * antennaRate;
+			    segmentPoint.y += vector.y * Math.sin(sineSeed) * this.pathRadius * antennaRate;
+			
+				}
+		}
+
+
+
+/*
+
     for (var t = 0; t < this.numTentacles; t++) {
         this.tentacles[t].anchor.point = this.path.segments[t + 1].point;
         this.tentacles[t].update(this.orientation);
     }
-
+*/
 
     this.path.smooth();
     this.wander();
@@ -191,27 +273,35 @@ NARDOVE.Jelly.prototype.checkBounds = function() {
     var offset = 60;
     if (this.location.x < -offset) {
         this.location.x = view.size.width + offset;
+        /*
         for (var t = 0; t < this.numTentacles; t++) {
             this.tentacles[t].path.position = this.location.clone();
         }
+        */
     }
     if (this.location.x > view.size.width + offset) {
         this.location.x = -offset;
+        /*
         for (var t = 0; t < this.numTentacles; t++) {
             this.tentacles[t].path.position = this.location.clone();
         }
+        */
     }
     if (this.location.y < -offset) {
         this.location.y = view.size.height + offset;
+        /*
         for (var t = 0; t < this.numTentacles; t++) {
             this.tentacles[t].path.position = this.location.clone();
         }
+        */
     }
     if (this.location.y > view.size.height + offset) {
         this.location.y = -offset;
+        /*
         for (var t = 0; t < this.numTentacles; t++) {
             this.tentacles[t].path.position = this.location.clone();
         }
+        */
     }
 }
 
@@ -282,7 +372,7 @@ NARDOVE.Main = (function() {
     var jellyCounter = 0;
     var numJellies = 7;
     var jellies = [numJellies];
-    var jellyResolution = 14;
+    var jellyResolution = 15; //14
 
 
     window.onload = function() {
@@ -291,7 +381,7 @@ NARDOVE.Main = (function() {
 
 
     this.draw = function(event) {
-        if (event.time > addJellyTimer + 6 && jellyCounter < numJellies) {
+        if (event.time > addJellyTimer + 1 && jellyCounter < numJellies) {
             jellySize = Math.random() * 10 + 40;
             jellies[jellyCounter] = new NARDOVE.Jelly(jellyCounter, jellySize, jellyResolution);
             jellies[jellyCounter].init();
