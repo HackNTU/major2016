@@ -27,7 +27,7 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 		this.path = new Path.RegularPolygon(this.cellCenter, this.pathSides, this.pathRadius);
 
 
-		this.antennaNumber =  Math.floor((this.pathSides / 3) * Math.random()) + 3;
+		this.antennaNumber =  Math.floor((this.pathSides / 3) * Math.random()) + 5;
 		this.antennas = [this.antennaNumber];
 
 		var antennasNumberCount = 0;
@@ -36,13 +36,14 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 		        if(this.antennas[i] !== 0){
 				        if (Math.random() * 2 > 1) {
 				            this.antennas[i] = 1;
+				            i++; //to avoid constantly antenna.
 				            antennasNumberCount++;
 				        }
 		     		}
 		    }
 		}
 
-
+/*
     // Colours courtesy of deliquescence:
     // http://www.colourlovers.com/palette/38473/boy_meets_girl
     this.colours = [{ s: "#1C4347", f: "#49ACBB" },
@@ -53,9 +54,22 @@ NARDOVE.Jelly = function(id, radius, resolution) {
         { s: "#580c23", f: "#ff3775" },
         { s: "#681635", f: "#EB1962" }
     ];
+*/
+
+		var cellFill = "#F581AB";
+		var cellStroke = "#595757";
+
+    this.colours = [{ s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill },
+        { s: cellStroke, f: cellFill }
+    ];
 
     this.pathStyle = {
-        strokeWidth: 3, // 14
+        strokeWidth: 3,
         strokeColor: this.colours[id].s,
         fillColor: this.colours[id].f
     };
@@ -196,7 +210,7 @@ NARDOVE.Jelly.prototype.update = function(event) {
 			    //segmentPoint.y += normalRotatedPoint.y * Math.sin(sineSeed);
 
 
-			    var antennaRate = 0.006;
+			    var antennaRate = 0.01; //0.006
 			    segmentPoint.x += vector.x * Math.sin(sineSeed) * this.pathRadius * antennaRate;
 			    segmentPoint.y += vector.y * Math.sin(sineSeed) * this.pathRadius * antennaRate;
 			
@@ -370,7 +384,7 @@ NARDOVE.Main = (function() {
     var timer = new Date();
     var addJellyTimer = 0;
     var jellyCounter = 0;
-    var numJellies = 7;
+    var numJellies = 5; //7
     var jellies = [numJellies];
     var jellyResolution = 15; //14
 
@@ -381,7 +395,8 @@ NARDOVE.Main = (function() {
 
 
     this.draw = function(event) {
-        if (event.time > addJellyTimer + 1 && jellyCounter < numJellies) {
+    		var cellBornInterval = 3;
+        if (event.time > addJellyTimer + cellBornInterval && jellyCounter < numJellies) {
             jellySize = Math.random() * 10 + 40;
             jellies[jellyCounter] = new NARDOVE.Jelly(jellyCounter, jellySize, jellyResolution);
             jellies[jellyCounter].init();
