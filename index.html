@@ -6,10 +6,11 @@
         HackNTU 2016 X Web
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="HackNTU hackthon NTU taiwan university school student" />
     <link rel="stylesheet" type="text/css" href="css/loading.css">
     <link rel="stylesheet" type="text/css" href="css/cell.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
@@ -17,11 +18,61 @@
     <script src="js/loading.js"></script>
     <script src="js/paper.js"></script>
     <script src="js/cell.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
 </head>
 
 <body>
     <!-- <div id="canvas-fixed"> -->
     <canvas id="canvas" resize width="100%" height="100%"></canvas>
     <!-- </div> -->
+    <header>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">HackNTU 2016</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="">議程</a>
+                        <a class="mdl-navigation__link" href="">交通</a>
+                        <a class="mdl-navigation__link" href="">常見問題</a>
+                        <a class="mdl-navigation__link" href="">工作人員</a>
+                    </nav>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="">中文</a>
+                        <a class="mdl-navigation__link" href="">English</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">HackNTU 2016</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">議程</a>
+                    <a class="mdl-navigation__link" href="">交通</a>
+                    <a class="mdl-navigation__link" href="">常見問題</a>
+                    <a class="mdl-navigation__link" href="">工作人員</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                </div>
+            </main>
+        </div>
+    </header>
 
 </html>
