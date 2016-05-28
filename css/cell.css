@@ -3,7 +3,7 @@ body {
     overflow: hidden;
     /*font-family: 'Libre Baskerville', serif;*/
 }
-/*
+
 #canvas-fixed {
     position: fixed;
     left: 0px;
@@ -11,7 +11,8 @@ body {
     top: 0px;
     bottom: 0px;
     z-index: -1;
-}*/
+    background: url('../img/cell-background.jpg') center / cover;
+}
 
 #canvas {
     /*display: block;*/
