@@ -85,7 +85,7 @@
     left: 15%;
 }
 
-.slogan-section {
+#slogan-section {
     position: relative;
     height: 700px;
     width: auto;
@@ -131,7 +131,7 @@
 /**** Mobile layout ****/
 
 @media (max-width: 900px) {
-    .slogan-section {
+    #slogan-section {
         height: 350px;
     }
     .hackntu-slogan {
