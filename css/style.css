@@ -84,3 +84,71 @@
     background-color: rgb(255, 64, 129);
     left: 15%;
 }
+
+.slogan-section {
+    position: relative;
+    height: 700px;
+    width: auto;
+    background-color: #f3f3f3;
+    /*background: url('images/slide01.jpg') center 30% no-repeat;*/
+    background: url(../img/clear-banner.png) center 30% no-repeat;
+    background-size: cover;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: white;
+    font-weight: 500;
+}
+
+.hackntu-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.hackntu-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+#call-to-action {
+    padding-top: 280px;
+}
+
+#call-to-action p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#event-banner {
+    background: url(../img/before-event-banner.jpg) center / cover;
+    height: 80vw;
+}
+
+
+/**** Mobile layout ****/
+
+@media (max-width: 900px) {
+    .slogan-section {
+        height: 350px;
+    }
+    .hackntu-slogan {
+        font-size: 36px;
+        margin: 0 16px;
+        padding-top: 50px;
+    }
+    .hackntu-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+    #call-to-action {
+        padding-top: 150px;
+    }
+    #call-to-action p {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+}
