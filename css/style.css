@@ -1,0 +1,202 @@
+.hackntu-header {
+    position: relative;
+    background-image: url(../img/header-bg.jpg);
+    /*background-color: white;*/
+}
+
+.hackntu-header .mdl-layout__header-row {
+    padding: 0;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.mdl-layout__title {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.is-compact .mdl-layout__title span {
+    display: none;
+}
+
+.hackntu-logo-row {
+    min-height: 200px;
+}
+
+.is-compact .hackntu-logo-row {
+    min-height: auto;
+}
+
+.hackntu-logo {
+    background: url(../img/logo/double-pink.png) 50% no-repeat;
+    /*background-size: cover;*/
+    height: 140px;
+    width: 358px;
+    margin: auto auto 10px;
+}
+
+.is-compact .hackntu-logo {
+    background: url(../img/logo/single-pink.png) 50% no-repeat;
+    height: 40px;
+    width: 300px;
+    /*Original Size is 338px X 80px*/
+    margin-top: 7px;
+}
+
+.hackntu-navigation-row {
+    background-color: rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    height: 45px;
+}
+
+.hackntu-navigation-row .mdl-navigation {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.hackntu-navigation-row .mdl-navigation__link {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 42px;
+}
+
+.hackntu-header .mdl-layout__drawer-button {
+    background-color: rgba(197, 197, 197, 0.44);
+}
+
+.hackntu-navigation-row .is-active {
+    position: relative;
+    font-weight: bold;
+}
+
+.hackntu-navigation-row .is-active:after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 64, 129);
+    left: 15%;
+}
+
+section {
+    overflow: hidden;
+    position: relative;
+}
+
+#slogan-section {
+    position: relative;
+    height: 700px;
+    width: auto;
+    background-color: #f3f3f3;
+    /*background: url('images/slide01.jpg') center 30% no-repeat;*/
+    background: url(../img/clear-banner.png) center 30% no-repeat;
+    background-size: cover;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: white;
+    font-weight: 500;
+}
+
+.hackntu-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.hackntu-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+#call-to-action {
+    padding-top: 280px;
+}
+
+#call-to-action p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#about-section {
+    background: url(../img/before-event-banner.jpg) center / cover;
+    height: 500px;
+}
+
+.light-blue-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #8FDBE5;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.about-container {
+    position: relative;
+    color: white;
+    z-index: 10
+}
+
+.about-title {
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+.about-text {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0 15%;
+}
+
+
+/**** Mobile layout ****/
+
+@media (max-width: 768px) {
+    #slogan-section {
+        height: 350px;
+    }
+    .hackntu-slogan {
+        font-size: 36px;
+        margin: 0 16px;
+        padding-top: 50px;
+    }
+    .hackntu-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+    #call-to-action {
+        padding-top: 150px;
+    }
+    #call-to-action p {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    #about-section {
+        background: url(../img/before-event-banner.jpg) center / cover;
+        height: 400px;
+    }
+    .about-title {
+        font-size: 32px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .about-text {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0 15%;
+    }
+}

@@ -2,14 +2,16 @@ function changeLang(language) {
 
     switch (language) {
         case "lang-tw":
-            $(".lang-tw").show();
-            $(".lang-en").hide();
+            $(".lang-tw").css("display", "");
+            $(".lang-en").css("display", "none");
             break;
         case "lang-en":
-            $(".lang-en").show();
-            $(".lang-tw").hide();
+            $(".lang-en").css("display", "");
+            $(".lang-tw").css("display", "none");
             break;
     }
+    // $().css("property","") to remove style seems doesn't works on IE8
+    // 
 }
 
 
