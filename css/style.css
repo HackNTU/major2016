@@ -1,6 +1,7 @@
 .hackntu-header {
     position: relative;
     background-image: url(../img/header-bg.jpg);
+    /*background-color: white;*/
 }
 
 .hackntu-header .mdl-layout__header-row {
@@ -29,21 +30,23 @@
 }
 
 .hackntu-logo {
-    background: url(../img/icon-180.png) 50% no-repeat;
-    background-size: cover;
-    height: 150px;
-    width: 150px;
+    background: url(../img/logo/double-pink.png) 50% no-repeat;
+    /*background-size: cover;*/
+    height: 140px;
+    width: 358px;
     margin: auto auto 10px;
 }
 
 .is-compact .hackntu-logo {
-    height: 50px;
-    width: 50px;
+    background: url(../img/logo/single-pink.png) 50% no-repeat;
+    height: 40px;
+    width: 300px;
+    /*Original Size is 338px X 80px*/
     margin-top: 7px;
 }
 
 .hackntu-navigation-row {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
     height: 45px;
 }
