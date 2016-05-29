@@ -85,6 +85,11 @@
     left: 15%;
 }
 
+section {
+    overflow: hidden;
+    position: relative;
+}
+
 #slogan-section {
     position: relative;
     height: 700px;
@@ -122,9 +127,37 @@
     font-weight: 300;
 }
 
-#event-banner {
+#about-section {
     background: url(../img/before-event-banner.jpg) center / cover;
-    height: 80vw;
+    height: 500px;
+}
+
+.light-blue-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #8FDBE5;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.about-container {
+    position: relative;
+    color: white;
+    z-index: 10
+}
+
+.about-title {
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+
+.about-text {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0 15%;
 }
 
 
@@ -150,5 +183,20 @@
     #call-to-action p {
         padding-top: 10px;
         font-size: 12px;
+    }
+    #about-section {
+        background: url(../img/before-event-banner.jpg) center / cover;
+        height: 400px;
+    }
+    .about-title {
+        font-size: 32px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .about-text {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0 15%;
     }
 }
