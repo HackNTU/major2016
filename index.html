@@ -8,32 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="HackNTU hackthon NTU taiwan university school student" />
+
+    <meta property="fb:app_id"             content="843944615750165" />
+    <meta property="og:url"                content="http://major2016.hackntu.org" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="2016 HackNTU" />
+    <meta property="og:description"        content="To think, to hack." />
+    <meta property="og:image"              content="img/og/600x315.jpg" />
+
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" />
     <link rel="stylesheet" type="text/css" href="css/loading.css">
     <link rel="stylesheet" type="text/css" href="css/cell.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
-    <script src="js/loading.js"></script>
-    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script src="js/paper.js"></script>
-    <script src="js/cell.js"></script>
-    <script src="js/lang.js"></script>
-    <script src="js/coming.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="application/x-javascript">
-    addEventListener("load", function() {
-        setTimeout(hideURLbar, 0);
-    }, false);
-
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    }
-    </script>
 </head>
 
 <body>
+
     <div id="canvas-fixed">
         <canvas id="canvas" resize width="100%" height="100%"></canvas>
     </div>
@@ -42,7 +33,7 @@
             <div class="mdl-layout__header-row hackntu-logo-row">
                 <span class="mdl-layout__title">
                     <div class="hackntu-logo"></div>
-										<!-- Title --> 
+										<!-- Title -->
 										<!-- <span class="mdl-layout__title">HackNTU 2016 website</span> -->
                 </span>
             </div>
@@ -86,7 +77,7 @@
                 <div id="call-to-action" class="logo-font">
                     <button class="lang-tw mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> 立即報名 </button>
                     <button class="lang-en mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> Sign up Now </button>
-                    <p class="lang-tw">請立即報名，......</p>
+                    <p class="lang-tw">請立即報名，......<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div></p>
                     <p class="lang-en">Please Sign up Now，......</p>
                 </div>
             </section>
@@ -124,6 +115,27 @@
             </footer>
         </main>
     </div>
+
+    <script src="js/fb.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="js/paper.js"></script>
+    <script src="js/cell.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/coming.js"></script>
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
 </body>
 
 </html>
