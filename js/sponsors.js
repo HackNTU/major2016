@@ -1,6 +1,6 @@
 function setSponsor(lang) {
 
-    var sponsorDisplay = $("#sponsorDisplay");
+    var sponsorDisplay = $("<div/>").addClass("lang-"+lang.toLowerCase()).appendTo($("#sponsorDisplay"));
 
     $("#sponsorSrc b:contains(+++" + lang + "-Sponsor-Start+++)").parent().nextUntil("p:has(b:contains(+++" + lang + "-Sponsor-End+++))").filter("h2").each(function() {
 
