@@ -90,7 +90,7 @@ section {
     position: relative;
 }
 
-#slogan-section {
+section#slogan-section {
     position: relative;
     height: 700px;
     width: auto;
@@ -127,7 +127,7 @@ section {
     font-weight: 300;
 }
 
-#about-section {
+section#about-section {
     background: url(../img/before-event-banner.jpg) center / cover;
     height: 500px;
 }
@@ -160,16 +160,17 @@ section {
     margin: 0 15%;
 }
 
-section#sponsors {
+section#sponsor-section {
     text-align: center;
+    background-color: white;
 }
 
-#sponsors h2 {
+#sponsor-section h2 {
     text-align: center;
     padding-top: 20px;
 }
 
-#sponsors a {
+#sponsor-section a {
     display: inline-block;
     vertical-align: top;
     margin-left: 10px;
@@ -180,14 +181,14 @@ section#sponsors {
     text-decoration: none;
 }
 
-#sponsors img {
+#sponsor-section img {
     max-height: 120px;
     max-width: 240px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, .3);
     border-radius: 3px;
 }
 
-#sponsors span {
+#sponsor-section span {
     display: block;
     font-weight: 700;
     color: #5d5d5d;
