@@ -4,6 +4,20 @@
     /*background-color: white;*/
 }
 
+.lang-tw,
+.lang-tw *,
+.font-tw,
+.font-tw * {
+    font-family: 'xingothic-tc';
+}
+
+.lang-en,
+.lang-en *,
+.font-en,
+.font-en * {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .hackntu-header .mdl-layout__header-row {
     padding: 0;
     -webkit-justify-content: center;
