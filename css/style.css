@@ -4,12 +4,23 @@
     /*background-color: white;*/
 }
 
-.lang-tw, .font-tw {
-    font-family: xingothic-tc; 
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+button {
+    font-family: 'Varela Round', 'justfont', 'Microsoft JhengHei', 'Roboto', 'Helvetica', 'Arial', 'sans-serif' !important;
 }
 
-.lang-en, .font-en {
-    font-family: 'Varela Round', sans-serif;
+a,
+button {
+    font-weight: 700 !important;
 }
 
 .hackntu-header .mdl-layout__header-row {
@@ -98,7 +109,7 @@ section {
     position: relative;
 }
 
-#slogan-section {
+section#slogan-section {
     position: relative;
     height: 700px;
     width: auto;
@@ -109,7 +120,6 @@ section {
 }
 
 .logo-font {
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
     color: white;
     font-weight: 500;
@@ -135,7 +145,7 @@ section {
     font-weight: 300;
 }
 
-#about-section {
+section#about-section {
     background: url(../img/before-event-banner.jpg) center / cover;
     height: 500px;
 }
@@ -166,6 +176,43 @@ section {
     padding-top: 50px;
     padding-bottom: 20px;
     margin: 0 15%;
+}
+
+section#sponsor-section {
+    text-align: center;
+    background-color: white;
+}
+
+#sponsor-section h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#sponsor-section a {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 260px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+#sponsor-section img {
+    max-height: 120px;
+    max-width: 240px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+}
+
+#sponsor-section span {
+    display: block;
+    font-weight: 700;
+    color: #5d5d5d;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 5px;
 }
 
 
