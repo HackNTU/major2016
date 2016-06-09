@@ -14,7 +14,7 @@
 .mdl-layout__title {
     font-size: 14px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .is-compact .mdl-layout__title span {
@@ -104,7 +104,7 @@ section#slogan-section {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     line-height: 1;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .hackntu-slogan {
@@ -124,7 +124,7 @@ section#slogan-section {
 #call-to-action p {
     padding-top: 20px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 section#about-section {
@@ -149,15 +149,22 @@ section#about-section {
 
 .about-title {
     font-size: 50px;
+    font-weight: 600;
     padding-top: 150px;
     padding-bottom: 40px;
+    text-shadow: 3px 3px 3px #757575;
 }
 
 .about-text {
     font-size: 20px;
+    font-weight: 700;
     padding-top: 50px;
     padding-bottom: 20px;
     margin: 0 15%;
+    line-height: 1.5;
+    text-shadow: 3px 3px 3px #757575;
+    letter-spacing: 2px;
+    text-align: justify;
 }
 
 section#sponsor-section {
@@ -200,7 +207,7 @@ section#sponsor-section {
 
 /**** Mobile layout ****/
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     #slogan-section {
         height: 350px;
     }
@@ -219,7 +226,7 @@ section#sponsor-section {
     }
     #call-to-action p {
         padding-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
     #about-section {
         background: url(../img/before-event-banner.jpg) center / cover;
@@ -227,7 +234,7 @@ section#sponsor-section {
     }
     .about-title {
         font-size: 32px;
-        padding-top: 50px;
+        padding-top: 80px;
         padding-bottom: 20px;
     }
     .about-text {
