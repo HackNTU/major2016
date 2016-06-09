@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HackNTU 2016 X Web
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="HackNTU hackthon NTU taiwan university school student" />
+
+    <meta property="fb:app_id"             content="843944615750165" />
+    <meta property="og:url"                content="http://major2016.hackntu.org" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="HackNTU | 2016 台大黑客松" />
+    <meta property="og:description"        content="To think, to hack." />
+    <meta property="og:image"              content="img/og/1200x630.jpg" />
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <link rel="stylesheet" type="text/css" href="css/cell.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/justfn.js"></script>
+    <!--<script src="https://s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-40523.js"></script>-->
+</head>
+
+<body>
+
+    <div id="canvas-fixed">
+        <canvas id="canvas" resize width="100%" height="100%"></canvas>
+    </div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall hackntu-header">
+            <div class="mdl-layout__header-row hackntu-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="hackntu-logo"></div>
+										<!-- Title -->
+										<!-- <span class="mdl-layout__title">HackNTU 2016 website</span> -->
+                </span>
+            </div>
+            <div class="mdl-layout__header-row hackntu-navigation-row mdl-layout--large-screen-only">
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="lang-tw mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">議程</a>
+                    <a class="mdl-navigation__link" href="">交通</a>
+                    <a class="mdl-navigation__link" href="">常見問題</a>
+                    <a class="mdl-navigation__link" href="">工作人員</a>
+                </nav>
+                <nav class="lang-en mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Schedule</a>
+                    <a class="mdl-navigation__link" href="">Transport</a>
+                    <a class="mdl-navigation__link" href="">FAQ</a>
+                    <a class="mdl-navigation__link" href="">Staff</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <span class="mdl-layout-title">HackNTU 2016</span>
+            <nav class="lang-tw mdl-navigation">
+                <a class="mdl-navigation__link" href="">議程</a>
+                <a class="mdl-navigation__link" href="">交通</a>
+                <a class="mdl-navigation__link" href="">常見問題</a>
+                <a class="mdl-navigation__link" href="">工作人員</a>
+            </nav>
+            <nav class="lang-en mdl-navigation">
+                <a class="mdl-navigation__link" href="">Schedule</a>
+                <a class="mdl-navigation__link" href="">Transport</a>
+                <a class="mdl-navigation__link" href="">FAQ</a>
+                <a class="mdl-navigation__link" href="">Staff</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <!-- Your content goes here -->
+            <section id="slogan-section" class="mdl-typography--text-center">
+                <div class="lang-tw logo-font hackntu-slogan">臺大黑客松</div>
+                <div class="lang-en logo-font hackntu-slogan">HackNTU</div>
+                <div class="logo-font hackntu-sub-slogan font-en">To think, to hack.</div>
+                <div id="call-to-action" class="logo-font">
+                    <button class="lang-tw mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> 立即報名 </button>
+                    <button class="lang-en mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> Sign up Now </button>
+                    <p class="lang-tw">請立即報名，......<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div></p>
+                    <p class="lang-en">Please Sign up Now，......</p>
+                </div>
+            </section>
+            <section id="about-section" class="mdl-grid--no-spacing mdl-typography--text-center">
+                <div class="light-blue-overlay"></div>
+                <div class="about-container">
+                    <div class="lang-tw about-title">關於臺大黑客松</div>
+                    <div class="lang-en about-title">About HackNTU</div>
+                    <p class="lang-tw about-text">2016HackNTU除延續2015年的精神外，我們希望能提供一個更加完善的環境，讓參賽者擁有最好的開發材料，因此積極尋找各式各樣的軟/硬體資源，並希望結合事前許多的工作坊、開發小聚或課程等等作為系列活動，透過一連串的激盪，讓所有創新的想法能夠在黑客松真實呈現。</p>
+                    <p class="lang-en about-text">We hope to be able to provide a more comprehensive environment so that the participants can have better resources to develop somthing amazing. Thus we hope that along with series of pre-event workshops and courses, we will be able to allow hackers to create innovative projects at 2016HackNTU.</p>
+                </div>
+            </section>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section ">
+                    <div class="mdl-logo">HackNTU 2016</div>
+                    <ul class="lang-tw mdl-mini-footer__link-list mdl-layout--large-screen-only">
+                        <li><a href="#">議程</a></li>
+                        <li><a href="#">交通</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">工作人員</a></li>
+                    </ul>
+                    <ul class="lang-en mdl-mini-footer__link-list mdl-layout--large-screen-only">
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Transport</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Staff</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul id="langSwitch" class="mdl-mini-footer__link-list">
+                        <li><a href="#langSwitch" class="font-tw" name="lang-tw">中文</a></li>
+                        <li><a href="#langSwitch" class="font-en" name="lang-en">Eng</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/fb.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="js/paper.js"></script>
+    <script src="js/cell.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/coming.js"></script>
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+</body>
+
+</html>
