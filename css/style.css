@@ -129,7 +129,7 @@ section {
 
 #about-section {
     background: url(../img/before-event-banner.jpg) center / cover;
-    height: 500px;
+    min-height: 500px;
 }
 
 .light-blue-overlay {
