@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="HackNTU hackthon NTU taiwan university school student" />
+    <meta property="fb:app_id" content="843944615750165" />
+    <meta property="og:url" content="http://major2016.hackntu.org" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HackNTU | 2016 台大黑客松" />
+    <meta property="og:description" content="To think, to hack." />
+    <meta property="og:image" content="img/og/1200x630.jpg" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" />
     <link rel="stylesheet" type="text/css" href="css/loading.css">
     <link rel="stylesheet" type="text/css" href="css/cell.css">
@@ -15,10 +21,12 @@
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+    <script src="js/loading.js"></script>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <!-- <script src="js/loading.js"></script> -->
     <script src="js/paper.js"></script>
     <script src="js/cell.js"></script>
+    <script src="js/coming.js"></script>
+    <script src="js/sponsors.js"></script>
     <script src="js/lang.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="application/x-javascript">
@@ -30,12 +38,17 @@
         window.scrollTo(0, 1);
     }
     </script>
+    <link href='//fonts.googleapis.com/css?family=Titan+One:400|Source+Sans Pro:300|Source+Sans Pro:400|Varela+Round:400|Nunito:700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/justfn.js"></script>
+    <!-- <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-42722.js"></script> -->
+    <script src="js/fb.js"></script>
 </head>
 
 <body>
-    <!-- <div id="canvas-fixed"> -->
-    <canvas id="canvas" resize width="100%" height="100%"></canvas>
-    <!-- </div> -->
+
+    <div id="canvas-fixed">
+        <canvas id="canvas" resize width="100%" height="100%"></canvas>
+    </div>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--waterfall hackntu-header">
             <div class="mdl-layout__header-row hackntu-logo-row">
@@ -80,12 +93,14 @@
             <section id="slogan-section" class="mdl-typography--text-center">
                 <div class="lang-tw logo-font hackntu-slogan">臺大黑客松</div>
                 <div class="lang-en logo-font hackntu-slogan">HackNTU</div>
-                <div class="logo-font hackntu-sub-slogan">To think, to hack.</div>
+                <div class="logo-font hackntu-sub-slogan font-en">To think, to hack.</div>
                 <div id="call-to-action" class="logo-font">
                     <button class="lang-tw mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> 立即報名 </button>
                     <button class="lang-en mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> Sign up Now </button>
-                    <p class="lang-tw">請立即報名，......</p>
-                    <p class="lang-en">Please Sign up Now，......</p>
+                    <p class="lang-tw">請立即報名，......
+                    </p>
+                    <p class="lang-en">Please Sign up Now，......
+                    </p>
                 </div>
             </section>
             <section id="about-section" class="mdl-grid--no-spacing mdl-typography--text-center">
@@ -98,6 +113,21 @@
                     </p>
                     <p class="lang-en about-text" style="font-weight:400;letter-spacing: 0px;">
                         Other than continuing to be large scaled hackathon from 2015 HackNTU, we will continue to provide a more comfortable hacking environment, various software and hardware resources at 2016 HackNTU. Along with series of pre-event workshops and courses, the hackers will have sufficient knowledge and resources and develop their project. We hope that through this process of brainstorming, the hackers will be able to bring their innovative ideas to life at 2016 HackNTU !
+                    </p>
+                </div>
+            </section>
+            <section id="sponsor-section">
+                <div id="sponsorSrc" style="display: none">
+                    <script src="https://hackntu2016.hackpad.com/KASS54b4oob.js?format=html-notitle"></script>
+                </div>
+                <div id="sponsorDisplay">
+                </div>
+                <div id="sponsorInfo">
+                    <p class="lang-tw">
+                        如果您欲贊助 HackNTU 2016，請聯繫：<u>hackntu@gmail.com"hackntu@gmail.com</u>
+                    </p>
+                     <p class="lang-en">
+                        The HackNTU 2016 Sponsorship team can be reached at：<u>hackntu@gmail.com"hackntu@gmail.com</u>
                     </p>
                 </div>
             </section>
