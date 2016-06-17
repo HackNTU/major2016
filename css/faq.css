@@ -10,21 +10,26 @@
 }
 
 .faq-text {
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 5% 15% 10%;
-    letter-spacing: 2px;
-    text-align: justify;
+  margin: 7% 15%;
+  letter-spacing: 2px;
+  text-align: justify;
 }
 
-.faq-text > p {
-    font-size: 16px;
-    color: #404040;
+.faq-div {
+  margin-top: 5%;
 }
 
-.faq-text > p b {
-    font-size: 18px;
-    color: black;
+.faq-div > .faq-question {
+  font-size: 22px;
+  color: black;
+  font-family: "Source Sans Pro" !important;
+  font-weight: 600;
+}
+
+.faq-text > .faq-div > .faq-answer {
+  font-size: 20px;
+  color: #162A2E;
+  font-family: "Source Sans Pro" !important;
 }
 
 /*http://codepen.io/bernardo/pen/ugApF*/
