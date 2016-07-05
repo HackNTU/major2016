@@ -76,7 +76,7 @@ $(document).ready(function() {
         logoVivus.reset();
         setTimeout(function() {
             logoVivus.play(1);
-        }, "1000");
+        }, "500"); // origin 1000.
 
     }
 
@@ -95,9 +95,9 @@ $(document).ready(function() {
 
     function logoVivus_callback() {
         // console.log("logoVivus_callback()");
-        staggerToOpacity(".logo-hackntu,.logo-2016");
+        // staggerToOpacity(".logo-hackntu,.logo-2016"); // disabled to speed up loading
 
-        TweenMax.to($("#svg_logo_all *"), 2, { // 1.2
+        TweenMax.to($("#svg_logo_all *"), 1.2, { // speed up. origin 2.
             fill: pink,
             stroke: "#FFF",
             transformOrigin: "50% 50%",
@@ -141,10 +141,10 @@ $(document).ready(function() {
 
     function logoInit() {
 
-        console.log("loading initial")
+        console.log("loading initial");
 
         vivusOptions = {
-            duration: 200,
+            duration: 70, // speed up. origin 200.
             type: 'scenario',
             // animTimingFunction: Vivus.EASE_IN
             animTimingFunction: Vivus.EASE_OUT
@@ -179,9 +179,9 @@ $(window).load(function() {
     loading = true;
 
     setTimeout(function() {
-        $("#loading-cover, #loading-background").fadeOut(1000).delay(100).queue(function() {
+        $("#loading-cover, #loading-background").fadeOut(700).delay(100).queue(function() {
             $(this).remove();
         });
-    }, "9000");
+    }, "5700"); // origin 9000 if execute staggerToOpacity(".logo-hackntu,.logo-2016");
 
 });
