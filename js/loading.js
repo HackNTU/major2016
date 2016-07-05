@@ -178,10 +178,15 @@ $(window).load(function() {
     console.log("loaded");
     loading = true;
 
-    setTimeout(function() {
+    var animateEvent = setTimeout(function() {
         $("#loading-cover, #loading-background").fadeOut(1000).delay(100).queue(function() {
             $(this).remove();
         });
-    }, "9000");
+    }, 4000);
+
+    $("#loading-cover").click(function(){
+        clearTimeout(animateEvent);
+        $("#loading-cover, #loading-background").hide();
+    })
 
 });
