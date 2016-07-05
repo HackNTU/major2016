@@ -14,21 +14,26 @@
     <meta property="og:title" content="HackNTU | 2016 台大黑客松" />
     <meta property="og:description" content="To think, to hack." />
     <meta property="og:image" content="img/og/1200x630.jpg" />
+
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" />
     <link rel="stylesheet" type="text/css" href="css/loading.css">
     <link rel="stylesheet" type="text/css" href="css/cell.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/faq.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='//fonts.googleapis.com/css?family=Titan+One:400|Source+Sans Pro:300|Source+Sans Pro:400|Varela+Round:400|Nunito:700' rel='stylesheet' type='text/css'>
+
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
-    <script src="js/loading.js"></script>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <script src="js/paper.js"></script>
     <script src="js/cell.js"></script>
     <script src="js/coming.js"></script>
-    <script src="js/sponsors.js"></script>
+    <script src="js/faq.js"></script>
     <script src="js/lang.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <script type="application/x-javascript">
     addEventListener("load", function() {
         setTimeout(hideURLbar, 0);
@@ -38,7 +43,7 @@
         window.scrollTo(0, 1);
     }
     </script>
-    <link href='//fonts.googleapis.com/css?family=Titan+One:400|Source+Sans Pro:300|Source+Sans Pro:400|Varela+Round:400|Nunito:700' rel='stylesheet' type='text/css'>
+
     <script type="text/javascript" src="js/justfn.js"></script>
     <!-- <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-42722.js"></script> -->
     <script src="js/fb.js"></script>
@@ -90,46 +95,22 @@
         </div>
         <main class="mdl-layout__content">
             <!-- Your content goes here -->
-            <section id="slogan-section" class="mdl-typography--text-center">
-                <div class="lang-tw logo-font hackntu-slogan">臺大黑客松</div>
-                <div class="lang-en logo-font hackntu-slogan">HackNTU</div>
-                <div class="logo-font hackntu-sub-slogan font-en">To think, to hack.</div>
-                <div id="call-to-action" class="logo-font">
-                    <a href="//www.accupass.com/go/2016hackntu" class="lang-tw mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> 一般報名 </a>
-                    <a href="//www.accupass.com/go/2016hackntu_foreign" class="lang-tw mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> 海外報名 </a>
-                    <a href="//www.accupass.com/go/2016hackntu" class="lang-en mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> Taiwan </a>
-                    <a href="//www.accupass.com/go/2016hackntu_foreign" class="lang-en mdl-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent"> Overseas </a>
-                    <p class="lang-tw">請立即報名 !</p>
-                    <p class="lang-en">Please Sign up Now !</p>
+            <section id="fqa-section" class="mdl-typography--text-center">
+                <div class="faq-title tw-title lang-tw">常見問題</div>
+                <div class="faq-title lang-en">
+	                <span class="letter" data-letter="F">F</span>
+	                <span class="letter" data-letter="A">A</span>
+	                <span class="letter" data-letter="Q">Q</span>
                 </div>
-            </section>
-            <section id="about-section" class="mdl-grid--no-spacing mdl-typography--text-center">
-                <div class="light-blue-overlay"></div>
-                <div class="about-container">
-                    <div class="lang-tw about-title">關於臺大黑客松</div>
-                    <div class="lang-en about-title">About HackNTU</div>
-                    <p class="lang-tw about-text">
-                        2016HackNTU 除延續去年的模式，是一場規模盛大的黑客松外，我們也將提供一個更加舒適的環境，整合各式各樣的軟/硬體資源，並結合事前許多的工作坊、開發小聚或課程等等作為系列活動，讓與會者有足夠的知識與資源能進行開發，期望透過這一連串的激盪，讓所有創新的想法在黑客松真實呈現！
-                    </p>
-                    <p class="lang-en about-text" style="font-weight:400;letter-spacing: 0px;">
-                        Other than continuing to be large scaled hackathon from 2015 HackNTU, we will continue to provide a more comfortable hacking environment, various software and hardware resources at 2016 HackNTU. Along with series of pre-event workshops and courses, the hackers will have sufficient knowledge and resources and develop their project. We hope that through this process of brainstorming, the hackers will be able to bring their innovative ideas to life at 2016 HackNTU !
-                    </p>
+                <div class="faq-text-tw" style="display: none">
+                    <script src="https://hackpad.com/2016HackNTU-FAQ-fSj8k9zgkUf.js?format=html-notitle"></script>
                 </div>
-            </section>
-            <section id="sponsor-section">
-                <div id="sponsorSrc" style="display: none">
-                    <script src="https://hackntu2016.hackpad.com/KASS54b4oob.js?format=html-notitle"></script>
+                <div class="faq-text-en" style="display: none">
+                    <script src="https://hackpad.com/2016HackNTU-FAQ-English-Ver.-UbW48JkGqmd.js?format=html-notitle"></script>
                 </div>
-                <div id="sponsorDisplay">
-                </div>
-                <div id="sponsorInfo">
-                    <p class="lang-tw">
-                        如果您欲贊助 HackNTU 2016，請聯繫：<u>hackntu@gmail.com</u>
-                    </p>
-                     <p class="lang-en">
-                        The HackNTU 2016 Sponsorship team can be reached at：<u>hackntu@gmail.com</u>
-                    </p>
-                </div>
+
+				<div class="faq-text lang-tw"></div>
+				<div class="faq-text lang-en"></div>
             </section>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section ">
@@ -137,13 +118,13 @@
                     <ul class="lang-tw mdl-mini-footer__link-list mdl-layout--large-screen-only">
                         <li><a href="#">議程</a></li>
                         <li><a href="#">交通</a></li>
-                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="#">常見問題</a></li>
                         <li><a href="#">工作人員</a></li>
                     </ul>
                     <ul class="lang-en mdl-mini-footer__link-list mdl-layout--large-screen-only">
                         <li><a href="#">Schedule</a></li>
                         <li><a href="#">Transport</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
                         <li><a href="#">Staff</a></li>
                     </ul>
                 </div>
