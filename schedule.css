@@ -1,0 +1,75 @@
+#hidePage  {
+  position:fixed;
+    height:100%;
+    background:red;
+    width:200px;
+    right:0px;
+    margin-right: -200px;
+}
+
+.schedule_table  {
+  width: 600px;
+  background: red;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+
+.table .tg-baqh{text-align:center;vertical-align:top}
+
+.tg .tg-yw4l{vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+table {
+  width: 800px;
+}
+
+#day1  {
+  width: auto;
+  background: #7FFFD4;
+}
+
+#day2  {
+  width: auto;
+  background: #F5F5DC;
+}
+
+#wid  {
+  font-size: 2rem;
+  background: #ADADAD;
+}
+
+.fixed_title  {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.table .sticky  {
+  position: fixed;
+  margin-top: 60px;
+  z-index: 20;
+}
+
+.affix {
+  top: 0px;
+  width: 800px;
+}
+
+#afftest.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+td  {
+    min-width: 80px;
+}
+
+.resize_stick {
+    margin-top: 20px;
+}
