@@ -1,3 +1,11 @@
+#afftest-base {
+    display: none;
+}
+
+#afftest.affix + #afftest-base {
+    display: table-row;
+}
+
 #hidePage  {
   position:fixed;
     height:100%;
