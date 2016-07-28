@@ -18,18 +18,17 @@
     <link rel="stylesheet" type="text/css" href="css/loading.css">
     <link rel="stylesheet" type="text/css" href="css/cell.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/faq.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='//fonts.googleapis.com/css?family=Titan+One:400|Source+Sans Pro:300|Source+Sans Pro:400|Varela+Round:400|Nunito:700' rel='stylesheet' type='text/css'>
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+    <script src="js/loading.js"></script>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <script src="js/paper.js"></script>
     <script src="js/cell.js"></script>
     <script src="js/coming.js"></script>
-    <script src="js/faq.js"></script>
+    <script src="js/sponsors.js"></script>
     <script src="js/lang.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="application/x-javascript">
     addEventListener("load", function() {
         setTimeout(hideURLbar, 0);
@@ -39,6 +38,7 @@
         window.scrollTo(0, 1);
     }
     </script>
+    <link href='//fonts.googleapis.com/css?family=Titan+One:400|Source+Sans Pro:300|Source+Sans Pro:400|Varela+Round:400|Nunito:700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/justfn.js"></script>
     <!-- <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-42722.js"></script> -->
     <script src="js/fb.js"></script>
@@ -73,7 +73,8 @@
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <span class="mdl-layout-title" onclick="window.location='index.html'">HackNTU 2016</span>
+            <span class="mdl-layout-title" onclick="window.location='index.html'"
+>HackNTU 2016</span>
             <nav class="lang-tw mdl-navigation">
                 <a class="mdl-navigation__link" href="">議程</a>
                 <a class="mdl-navigation__link" href="tumblr.html">資訊公告</a>
@@ -82,28 +83,15 @@
             </nav>
             <nav class="lang-en mdl-navigation">
                 <a class="mdl-navigation__link" href="">Schedule</a>
-                <a class="mdl-navigation__link" href="tumblr.html">Information</a>
+                <a class="mdl-navigation__link" href="tumblr.html">Tumblr</a>
                 <a class="mdl-navigation__link" href="faq.html">FAQ</a>
                 <a class="mdl-navigation__link" href="">Staff</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <!-- Your content goes here -->
-            <section id="fqa-section" class="mdl-typography--text-center">
-                <div class="faq-title tw-title lang-tw">常見問題</div>
-                <div class="faq-title lang-en">
-                    <span class="letter" data-letter="F">F</span>
-                    <span class="letter" data-letter="A">A</span>
-                    <span class="letter" data-letter="Q">Q</span>
-                </div>
-                <div class="faq-text-tw" style="display: none">
-                    <script src="https://hackpad.com/2016HackNTU-FAQ-fSj8k9zgkUf.js?format=html-notitle"></script>
-                </div>
-                <div class="faq-text-en" style="display: none">
-                    <script src="https://hackpad.com/2016HackNTU-FAQ-English-Ver.-UbW48JkGqmd.js?format=html-notitle"></script>
-                </div>
-                <div class="faq-text lang-tw"></div>
-                <div class="faq-text lang-en"></div>
+            <section id="tumblr-section" class="mdl-typography--text-center">
+                <iframe src="https://hackntu.tumblr.com/" frameborder="0" style="height: 500vw;" scrolling="no"></iframe>
             </section>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section ">
@@ -111,7 +99,7 @@
                     <ul class="lang-tw mdl-mini-footer__link-list mdl-layout--large-screen-only">
                         <li><a href="#">議程</a></li>
                         <li><a href="tumblr.html">資訊公告</a></li>
-                        <li><a href="#">常見問題</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
                         <li><a href="#">工作人員</a></li>
                     </ul>
                     <ul class="lang-en mdl-mini-footer__link-list mdl-layout--large-screen-only">
