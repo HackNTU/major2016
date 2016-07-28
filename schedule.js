@@ -89,9 +89,17 @@ $(document).ready(function() {
 //   }
 // })
 
+  //console.log('helper bottom = ' + $('#helper').offset().height);
+
   $(window).scroll(function() {
 
     var touchTop = false;
+
+    if( $('#afftest').hasClass('affix') && $('#lastrow').offset().top - $(window).scrollTop() <= $('#title').height() )  {
+      console.log('Hello world');
+      $('#afftest').removeClass('affix');
+      $('#afftest').addClass('affix-top');
+    }
 
     //console.log('top = ' + ($('#title').offset().top - $(window).scrollTop()));
 
