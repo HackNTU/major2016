@@ -28,8 +28,13 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 
 
 		this.antennaNumber =  Math.floor((this.pathSides / 3) * Math.random()) + 5;
-		this.antennas = [this.antennaNumber];
+		this.antennas = [];
 
+		for (var i = 0; i < this.pathSides; i += 2) {
+		    this.antennas[i] = 1;
+		}
+
+/*
 		var antennasNumberCount = 0;
 		while (antennasNumberCount <= this.antennaNumber) {
 		    for (var i = 0; i < this.pathSides; i++) {
@@ -42,6 +47,7 @@ NARDOVE.Jelly = function(id, radius, resolution) {
 		     		}
 		    }
 		}
+*/
 
 /*
     // Colours courtesy of deliquescence:
@@ -395,6 +401,7 @@ NARDOVE.Main = (function() {
 
 
     this.draw = function(event) {
+    		var jellyResolution = 10 +  Math.floor(5 * Math.random()) * 2; //10 ~ 18
     		var cellBornInterval = 3;
         if (event.time > addJellyTimer + cellBornInterval && jellyCounter < numJellies) {
             jellySize = Math.random() * 10 + 40;
