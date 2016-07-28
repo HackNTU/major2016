@@ -45,6 +45,8 @@ $(document).ready(function() {
     // document.getElementById('day2').style.display = 'block';
   });
 
+  console.log("in another .js => cs = " + cs);
+
   $("td").each(function() {
         $(this).width($(this).width());
   });
