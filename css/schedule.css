@@ -1,15 +1,18 @@
 
 body {
-  margin: 0;
-  padding: 10px;
+  max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5%;
   color: rgb(50,50,50);
   font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.6em;
+  /*color: #eee9dc;
+	background: #48b379;*/
 }
 
 .main {
-  background: rgb(230,230,230);
+  background: #eaebed;
   padding: 30px;
 }
 
@@ -43,9 +46,11 @@ body {
 
 .tg .tg-yw4l{vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 table {
   width: 800px;
+  font-family: 'Chewy', cursive ,'Noto Sans TC', sans-serif;
 }
 
 #day1  {
@@ -107,26 +112,9 @@ td  {
   align-content: center;
 }
 
-.border-top-radius(@radius) {
-  border-top-right-radius: @radius;
-   border-top-left-radius: @radius;
-}
-.border-right-radius(@radius) {
-  border-bottom-right-radius: @radius;
-     border-top-right-radius: @radius;
-}
-.border-bottom-radius(@radius) {
-  border-bottom-right-radius: @radius;
-   border-bottom-left-radius: @radius;
-}
-.border-left-radius(@radius) {
-  border-bottom-left-radius: @radius;
-     border-top-left-radius: @radius;
-}
-
 /* ================ The Timeline ================ */
 
-.timeline {
+/*.timeline {
   position: relative;
   width: 660px;
   margin: 0 auto;
@@ -292,11 +280,11 @@ td  {
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
-}
+}*/
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+/*@media screen and (max-width: 660px) {
 
 .timeline {
  	width: 100%;
@@ -399,8 +387,219 @@ td  {
 .direction-r .desc {
 	margin: 1em 4em 0 4em;
   }
+}*/
+
+h2 {
+	margin: 3em 0 0 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
-.tab-content  {
-  margin-top: 20px;
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#timeline {
+	list-style: none;
+	margin: 50px 0 30px 120px;
+	padding-left: 30px;
+	border-left: 8px solid #303539;
+}
+
+#timeline li {
+	margin: 40px 0;
+	position: relative;
+}
+
+#timeline p {
+	margin: 0 0 15px;
+}
+
+.date {
+	margin-top: -10px;
+	top: 50%;
+	left: -158px;
+	font-size: 0.95em;
+	line-height: 20px;
+	position: absolute;
+}
+
+.circle {
+	margin-top: -10px;
+	top: 50%;
+	left: -44px;
+	width: 20px;
+	height: 20px;
+	background: #48b379;
+	border: 5px solid #303539;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+
+.content {
+	max-height: 20px;
+	padding: 50px 20px 0;
+	border-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0.5em;
+	position: relative;
+  background-color: #fff;
+}
+
+.content:before, .content:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	position: absolute;
+	pointer-events: none;
+	right: 100%;
+}
+
+.content:before {
+	border-right-color: inherit;
+	border-width: 20px;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.content:after {
+	border-right-color: #fff;
+	border-width: 17px;
+	top: 50%;
+	margin-top: -17px;
+}
+
+.content p {
+	max-height: 0;
+	color: transparent;
+	text-align: justify;
+	word-break: break-word;
+	hyphens: auto;
+	overflow: hidden;
+}
+
+label {
+	font-size: 1.3em;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+	top: 20px;
+	transition: transform 0.2s linear;
+}
+
+.radio {
+	display: none;
+}
+
+.radio:checked + .relative label {
+	cursor: auto;
+	transform: translateX(42px);
+}
+
+.radio:checked + .relative .circle {
+	background: #f98262;
+}
+
+.radio:checked ~ .content {
+	max-height: 180px;
+	border-color: #303539;
+	margin-right: 20px;
+	transform: translateX(20px);
+	transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+
+.radio:checked ~ .content p {
+	max-height: 200px;
+	color: #303539;
+	transition: color 0.3s linear 0.3s;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+	#timeline {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+
+	#timeline li {
+		margin: 50px 0;
+	}
+
+	label {
+		width: 85%;
+		font-size: 1.1em;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: block;
+		transform: translateX(18px);
+	}
+
+	.content {
+		padding-top: 45px;
+		border-color: #303539;
+	}
+
+	.content:before, .content:after {
+		border: solid transparent;
+		bottom: 100%;
+	}
+
+	.content:before {
+		border-bottom-color: inherit;
+		border-width: 17px;
+		top: -16px;
+		left: 50px;
+		margin-left: -17px;
+	}
+
+	.content:after {
+		border-bottom-color: #fff;
+		border-width: 20px;
+		top: -20px;
+		left: 50px;
+		margin-left: -20px;
+	}
+
+	.content p {
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
+
+	.circle, .date {
+		display: none;
+	}
+}
+
+.nav-pills{
+  display:inline;
+  font-size: 1rem;
+  font-family: 'Chewy', cursive ,'Noto Sans TC', sans-serif;
+}
+.tab-content{
+    /*background-color:#303136;
+    color:#000;
+    padding:5px;*/
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.nav-pills > li > a {
+  height: 2.5rem;
+  line-height: 1.25rem;
+  text-align: center;
+  border: medium none;
+  color: #fff;
+  background-color:#bbbcbe;
+  margin: 2px;
+}
+.nav-pills > li.active > a, .nav-pills > li > a:hover {
+  background-color: #2c3840 !important;
+  border: medium none;
 }
