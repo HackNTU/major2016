@@ -2,6 +2,7 @@
 var cs = "分類";
 var act = "活動";
 var food = "餐飲";
+var talk = "talk";
 var demo_st = "DEMO開場";
 var F1 = "FIntech 1";
 var buf = "緩衝跟串場";

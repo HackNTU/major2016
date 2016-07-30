@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>
+      HackNTU 2016 X Web
+  </title>
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script> -->
@@ -8,11 +11,11 @@
   <link rel="stylesheet" type="text/css" href="css/schedule.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="js/TextResources.js"></script>
   <script src="js/schedule.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
 </head>
 <body>
   <!-- <button class="btn btn-default" id="day1_btn">Day1</button>
@@ -20,9 +23,9 @@
 <div role="tabpanel" class="main">
   <!-- Nav panes -->
   <ul class="nav nav-pills " role="tablist">
-    <li role="presentation" class="centerTab active" style="width: 32.3%; text-align:center;" ><a href="#day1" role="tab" data-toggle="tab">Day1</a></li>
-    <li role="presentation" class="centerTab" style="width: 32.3%; text-align:center;"><a href="#day2" role="tab" data-toggle="tab" >Day2</a></li>
-    <li role="presentation" class="centerTab" style="width: 32.3%; text-align:center;"><a href="#day3" role="tab" data-toggle="tab" >Day3</a></li>
+    <li role="presentation" class="centerTab active" style="width: 32.8%; text-align:center;" ><a href="#day1" role="tab" data-toggle="tab">Day1</a></li>
+    <li role="presentation" class="centerTab" style="width: 32.8%; text-align:center;"><a href="#day2" role="tab" data-toggle="tab" >Day2</a></li>
+    <li role="presentation" class="centerTab" style="width: 32.8%; text-align:center;"><a href="#day3" role="tab" data-toggle="tab" >Day3</a></li>
   </ul>
   <!-- Tab panes -->
   <!-- <div class="tab-content">
@@ -31,380 +34,215 @@
     <div role="tabpanel" class="tab-pane" id="messages">...</div>
     <div role="tabpanel" class="tab-pane" id="settings">...</div>
   </div> -->
-  <div class="tg-wrap tab-content">
+  <div class="tab-content">
     <!-- Section One -->
     <div role="tabpanel" class="tab-pane active in fade" id="day1">
-      <table class="table" >
-        <thead>
-          <tr >
-            <th class="tg-baqh" colspan="7">8/19</th>
-          </tr>
-          <tr id="afftest" style="background: cyan;">
-            <td class="tg-yw4l">時間</td>
-            <td class="tg-yw4l">分類</td>
-            <td class="tg-yw4l">標題</td>
-            <td class="tg-yw4l">副標題</td>
-            <td class="tg-yw4l">說明文字</td>
-            <td class="tg-yw4l">地點</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr id="afftest-base" style="background: cyan;">
-            <td class="tg-yw4l">時間</td>
-            <td class="tg-yw4l">分類</td>
-            <td class="tg-yw4l">標題</td>
-            <td class="tg-yw4l">副標題</td>
-            <td class="tg-yw4l">說明文字</td>
-            <td class="tg-yw4l">地點</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-        </thead>
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/19
+      </h3>
+      <ul class="timeline">
+        <li class='work'>
+          <input class='radio' name='works' type='radio' checked>
+          <div class="relative">
+            <label >hacking結束(繳交作品) & 午餐</label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+              <i class="material-icons md-24" >description</i>
+            </p>
 
-        <tbody id="helper">
-          <tr>
-            <td class="tg-yw4l">9:30~10:30</td>
-            <td class="tg-yw4l">活動</td>
-            <td class="tg-yw4l">與會者報到</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F門口報到處</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">11:00~12:00</td>
-            <td class="tg-yw4l">活動</td>
-            <td class="tg-yw4l">開幕典禮</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">12:00~13:00</td>
-            <td class="tg-yw4l">餐飲</td>
-            <td class="tg-yw4l">午餐</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">13:30~14:30</td>
-            <td class="tg-yw4l">活動</td>
-            <td class="tg-yw4l">組隊時間</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">17:30~18:30</td>
-            <td class="tg-yw4l">餐飲</td>
-            <td class="tg-yw4l">晚餐</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">18:30~</td>
-            <td class="tg-yw4l">活動</td>
-            <td class="tg-yw4l">seminar</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館B1 Talk場地</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">20:00~21:00</td>
-            <td class="tg-yw4l">活動</td>
-            <td class="tg-yw4l">104-tech talk/主題xxx</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館B1 Talk場地</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr id="lastrow">
-            <td class="tg-yw4l">23:00~00:00</td>
-            <td class="tg-yw4l">餐飲</td>
-            <td class="tg-yw4l">宵夜</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-        </tbody>
-      </table>
+          </div>
+        </li>
+      </ul>
     </div>
     <!-- Section Two -->
-    <div class="tab-pane tg-wrap" role="tabpanel" id="day2">
-      <table class="table">
-        <thead>
-          <tr style="text-align:center;vertical-align:top;">
-            <th class="tg-baqh" colspan="7">8/20</th>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">時間</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">內容</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">地點</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-        </thead>
+    <div role="tabpanel" class="tab-pane in fade" id="day2">
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/20
+      </h3>
+      <ul class="timeline">
+        <li class='work'>
+          <input class='radio' id='day2work1' name='works' type='radio' checked>
+          <div class="relative">
+            <label for='day2work1'>
+              早餐
+              <span class="label label-as-badge food"  >餐飲</span>
+            </label>
+            <span class='date'>08:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work2' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work2'>
+              Tech talk
+              <span class="label label-as-badge talk">Talk</span>
+            </label>
+            <span class='date'>09:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館B1-B2TechTalk區1
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work3' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work3'>
+              Tech talk
+              <span class="label label-as-badge talk">Talk</span>
+            </label>
+            <span class='date'>10:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館B1-B2TechTalk區2
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work4' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work4'>
+              Tech talk
+              <span class="label label-as-badge talk">Talk</span>
+            </label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館B1-B2TechTalk區1
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work5' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work5'>午餐</label>
+            <span class='date'>12:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane in fade" id="day3">
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/21
+      </h3>
+      <ul class='timeline'>
+        <li class='work'>
+          <input class='radio' id='work1' name='works' type='radio' checked>
+          <div class="relative">
+            <label for='work1'>hacking結束(繳交作品) & 午餐</label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+              <i class="material-icons md-24" >description</i>
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='work2' name='works' type='radio'>
+          <div class="relative">
+            <label for='work2'>Expo＆評審時間</label>
+            <span class='date'>12:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='work3' name='works' type='radio'>
+          <div class="relative">
+            <label for='work3'>Demo</label>
+            <span class='date'>15:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='work4' name='works' type='radio'>
+          <div class="relative">
+            <label for='work4'>閉幕跟頒獎</label>
+            <span class='date'>17:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              台大綜合體育館1F-A1主會場
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Panel End -->
+<div class="container">
+  <table class="table">
+      <thead>
+        <tr>
+          <th>#
+          <th>First Name
+          <th>Last Name
+          <th>Username
         <tbody>
-          <tr>
-            <td class="tg-yw4l">8:00~9:00</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">早餐</td>
-            <td class="tg-yw4l"></td>
-            <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-            <td class="tg-yw4l"></td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">9:00~10:00</td>
-            <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 1講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區1</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">10:00~11:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 2講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區2</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">11:00~12:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 3講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區1</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">12:00~13:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">午餐</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">13:00~14:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 4講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區2</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">14:00~15:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 5講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區1</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">15:00~16:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">tech talk 5講者ooo/主題xxxxxx</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1 talk區2</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">18:00~19:00</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">晚餐</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館1F活動主會場</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-            <tr>
-              <td class="tg-yw4l">20:00~之後</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">開放雷戰</td>
-              <td class="tg-yw4l"></td>
-              <td class="tg-yw4l">台大綜合體育館B1活動區</td>
-              <td class="tg-yw4l"></td>
-            </tr>
-          </tbody>
-        </table>
+              <tr id="one">
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+      </table>
+      <div id="hidePage">
+          <h1>Hello world</h1>
       </div>
-      <div role="tabpanel" class="tab-pane in fade" id="day3">
-        <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
-          8/21
-        </h3>
-        <ul id='timeline'>
-          <li class='work'>
-            <input class='radio' id='work4' name='works' type='radio' checked>
-            <div class="relative">
-              <label for='work4'>hacking結束(繳交作品) & 午餐</label>
-              <span class='date'>11:00</span>
-              <span class='circle'></span>
-            </div>
-            <div class='content'>
-              <p>
-                台大綜合體育館1F-A1主會場
-              </p>
-            </div>
-          </li>
-          <li class='work'>
-            <input class='radio' id='work3' name='works' type='radio'>
-            <div class="relative">
-              <label for='work3'>Expo＆評審時間</label>
-              <span class='date'>12:00</span>
-              <span class='circle'></span>
-            </div>
-            <div class='content'>
-              <p>
-                台大綜合體育館1F-A1主會場
-              </p>
-            </div>
-          </li>
-          <li class='work'>
-            <input class='radio' id='work2' name='works' type='radio'>
-            <div class="relative">
-              <label for='work2'>Demo</label>
-              <span class='date'>15:00</span>
-              <span class='circle'></span>
-            </div>
-            <div class='content'>
-              <p>
-                台大綜合體育館1F-A1主會場
-              </p>
-            </div>
-          </li>
-          <li class='work'>
-            <input class='radio' id='work1' name='works' type='radio'>
-            <div class="relative">
-              <label for='work1'>閉幕跟頒獎</label>
-              <span class='date'>17:00</span>
-              <span class='circle'></span>
-            </div>
-            <div class='content'>
-              <p>
-                台大綜合體育館1F-A1主會場
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- Panel End -->
-
-  <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th>#
-            <th>First Name
-            <th>Last Name
-            <th>Username
-          <tbody>
-                <tr id="one">
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-        </table>
-        <div id="hidePage">
-            <h1>Hello world</h1>
-        </div>
-      </div>
-
-  <div role="container tabpanel">
-
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active centerTab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active in fade" id="home"><table><thead><tr>
-        <th>#
-        <th>First Name
-        <th>Last Name
-        <th>Username
-      <tbody>
-            <tr id="one">
-              <td>1
-              <td>Mark
-              <td>Otto
-              <td>@mdo
-            <tr>
-              <td>2
-              <td>Jacob
-              <td>Thornton
-              <td>@fat
-            <tr>
-              <td>3
-              <td>Larry
-              <td>the Bird
-              <td>@twitter</table></div>
-      <div role="tabpanel" class="tab-pane fade" id="profile">
-
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="messages">message!</div>
-      <div role="tabpanel" class="tab-pane fade" id="settings"><div>Block</div></div>
-    </div>
-
+    </table>
   </div>
 
-  <!-- <ul class="timeline">
-
-  	<li>
-  		<div class="direction-r">
-  			<div class="flag-wrapper">
-  				<span class="flag">Freelancer</span>
-  				<span class="time-wrapper"><span class="time">2013 - present</span></span>
-  			</div>
-  			<div class="desc">My current employment. Way better than the position before!</div>
-  		</div>
-  	</li>
-
-  	<li>
-  		<div class="direction-r">
-  			<div class="flag-wrapper">
-  				<span class="flag">Apple Inc.</span>
-  				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-  			</div>
-  			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-  		</div>
-  	</li>
-
-  	<li>
-  		<div class="direction-r">
-  			<div class="flag-wrapper">
-  				<span class="flag">Harvard University</span>
-  				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-  			</div>
-  			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-  		</div>
-  	</li>
-
-  </ul> -->
-
-  <h3>width is <strong id="wid">hello</strong></h3>
+  <h3>width is <strong id="wid">100000</strong></h3>
   <footer>
     I am footer
   </footer>
