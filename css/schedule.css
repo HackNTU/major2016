@@ -45,11 +45,11 @@ body {
 .table .tg-baqh{text-align:center;vertical-align:top}
 
 .tg .tg-yw4l{vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {/*overflow-x: auto;*/-webkit-overflow-scrolling: touch;}}
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-table {
-  width: 800px;
+table, h3 {
+  /*width: 800px;*/
   font-family: 'Chewy', cursive ,'Noto Sans TC', sans-serif;
 }
 
@@ -418,8 +418,10 @@ h2 {
 .date {
 	margin-top: -10px;
 	top: 50%;
-	left: -158px;
+	left: -120px;
 	font-size: 0.95em;
+  font-weight: 600;
+  color: #969a9d;
 	line-height: 20px;
 	position: absolute;
 }
@@ -460,7 +462,7 @@ h2 {
 
 .content:before {
 	border-right-color: inherit;
-	border-width: 20px;
+	border-width: 0px;
 	top: 50%;
 	margin-top: -20px;
 }
@@ -505,7 +507,7 @@ label {
 
 .radio:checked ~ .content {
 	max-height: 180px;
-	border-color: #303539;
+	border-color: #fff;
 	margin-right: 20px;
 	transform: translateX(20px);
 	transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
@@ -521,11 +523,11 @@ label {
  * mobile phones (vertical version only)
  * ------------------------------------- */
 @media screen and (max-width: 767px) {
-	#timeline {
+	/*#timeline {
 		margin-left: 0;
 		padding-left: 0;
 		border-left: none;
-	}
+	}*/
 
 	#timeline li {
 		margin: 50px 0;
@@ -541,12 +543,12 @@ label {
 		transform: translateX(18px);
 	}
 
-	.content {
+	/*.content {
 		padding-top: 45px;
-		border-color: #303539;
-	}
+		border-color: #fff;
+	}*/
 
-	.content:before, .content:after {
+	/*.content:before, .content:after {
 		border: solid transparent;
 		bottom: 100%;
 	}
@@ -565,7 +567,7 @@ label {
 		top: -20px;
 		left: 50px;
 		margin-left: -20px;
-	}
+	}*/
 
 	.content p {
 		font-size: 0.9em;
@@ -573,13 +575,13 @@ label {
 	}
 
 	.circle, .date {
-		display: none;
+		display: inline;
 	}
 }
 
 .nav-pills{
   display:inline;
-  font-size: 1rem;
+  font-size: 100%;
   font-family: 'Chewy', cursive ,'Noto Sans TC', sans-serif;
 }
 .tab-content{
