@@ -223,16 +223,17 @@ label {
 		width: 85%;
 		font-size: 1.1em;
 		white-space: nowrap;
-		text-overflow: ellipsis;
-		/*overflow: hidden;*/
-		display: block;
+		/*text-overflow: ellipsis;*/
+		/*overflow-x: scroll;*/
+		/*display: block;*/
+    margin-left: 10px;
 		/*transform: translateX(0px);*/
 	}
 
-	/*.content {
-		padding-top: 45px;
+	.content {
+		padding-left: 10px;
 		border-color: #fff;
-	}*/
+	}
 
 	/*.content:before, .content:after {
 		border: solid transparent;
@@ -340,6 +341,10 @@ label {
 
 .relative .label {
   font-size: 1rem;
+  margin-left: 0.5rem;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: .3em;
 }
 
 .label-as-badge {
