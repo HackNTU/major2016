@@ -120,6 +120,10 @@ h2 {
   background-color: #fff;
 }
 
+.content.subexist {
+	padding: 75px 20px 0;
+}
+
 .content:before, .content:after {
 	content: "";
 	width: 0;
@@ -153,7 +157,7 @@ h2 {
 	overflow: hidden;
 }
 
-.content > p > .material-icons  {
+.content > p > .material-icons.right  {
   position: absolute;
   right: 10px;
   cursor: pointer;
@@ -223,7 +227,6 @@ label {
 		width: 85%;
 		font-size: 1.1em;
 		white-space: nowrap;
-		/*text-overflow: ellipsis;*/
 		/*overflow-x: scroll;*/
 		/*display: block;*/
     margin-left: 10px;
@@ -234,6 +237,10 @@ label {
 		padding-left: 10px;
 		border-color: #fff;
 	}
+
+  .content.subexist {
+  	padding: 75px 10px 0;
+  }
 
 	/*.content:before, .content:after {
 		border: solid transparent;
@@ -261,7 +268,7 @@ label {
   	transform: translateX(10px);
   }
   .radio:checked ~ .content {
-  	max-height: 180px;
+  	max-height: 500px;
   	border-color: #fff;
   	margin-right: 10px;
   	transform: translateX(10px);
@@ -280,6 +287,15 @@ label {
 	.circle, .date {
 		display: inline;
 	}
+
+  label > p {
+    /*overflow-x: scroll;*/
+    /*margin-right: 1% !important;*/
+  }
+
+  sub {
+    font-size: 14px;
+  }
 }
 
 .nav-pills{
@@ -359,4 +375,8 @@ label {
 }
 .relative .label.talk {
   background-color: #7e4c41;
+}
+
+sub {
+  color: #a1a1a1;
 }
