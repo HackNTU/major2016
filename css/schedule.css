@@ -227,7 +227,7 @@ label {
 		width: 85%;
 		font-size: 1.1em;
 		white-space: nowrap;
-		/*overflow-x: scroll;*/
+		overflow-x: scroll;
 		/*display: block;*/
     margin-left: 10px;
 		/*transform: translateX(0px);*/
@@ -235,7 +235,6 @@ label {
 
 	.content {
 		padding-left: 10px;
-		border-color: #fff;
 	}
 
   .content.subexist {
@@ -289,8 +288,9 @@ label {
 	}
 
   label > p {
-    /*overflow-x: scroll;*/
+    overflow-x: hidden;
     /*margin-right: 1% !important;*/
+    line-height: 2rem;
   }
 
   sub {
@@ -357,7 +357,7 @@ label {
 
 .relative .label {
   font-size: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 0rem;
   vertical-align: top;
   display: inline-block;
   padding-top: .3em;
