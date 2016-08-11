@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+      HackNTU 2016 X Web
+  </title>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/schedule.css">
+  <script type="text/javascript" src="js/TextResources.js"></script>
+  <script src="js/schedule.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <!-- <button class="btn btn-default" id="day1_btn">Day1</button>
+  <button class="btn btn-default" id="day2_btn">Day2</button> -->
+<div role="tabpanel" class="main">
+  <!-- Nav panes -->
+  <ul class="nav nav-pills " role="tablist">
+    <li role="presentation" class="centerTab active" style="width: 32.8%; text-align:center;" ><a href="#day1" role="tab" data-toggle="tab">Day1</a></li>
+    <li role="presentation" class="centerTab" style="width: 32.8%; text-align:center;"><a href="#day2" role="tab" data-toggle="tab" >Day2</a></li>
+    <li role="presentation" class="centerTab" style="width: 32.8%; text-align:center;"><a href="#day3" role="tab" data-toggle="tab" >Day3</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <!-- <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div> -->
+  <div class="tab-content">
+    <!-- Section One -->
+    <div role="tabpanel" class="tab-pane active in fade" id="day1">
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/19
+      </h3>
+      <ul class="timeline">
+        <li class='work'>
+          <input class='radio' id='day1work1' name='works' type='radio' checked>
+          <div class="relative">
+            <label for='day1work1'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Hackers Sign-in<span>
+            </label>
+            <span class='date'>09:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - Lobby
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work2' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work2'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Opening Ceremony</span>
+            </label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work3' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work3'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Overview of Rules and Sponsor Prizes</span>
+            </label>
+            <span class='date'>11:45</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work4' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work4'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Lunch</span>
+            </label>
+            <span class='date'>13:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work5' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work5'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Team Formations Activity</span>
+            </label>
+            <span class='date'>13:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work6' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work6'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Seminar(API Talk)</span>
+              <p><sub>Part 1</sub></p>
+            </label>
+            <span class='date'>16:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work7' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work7'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Dinner</span>
+            </label>
+            <span class='date'>17:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+              <!-- <i class="material-icons md-24 right" >description</i> -->
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work8' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work8'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Seminar(API Talk)</span>
+              <p><sub>Part 2</sub></p>
+            </label>
+            <span class='date'>18:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work9' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work9'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：104 Meets Cloud—撥雲見日甘苦談</sub></p>
+            </label>
+            <span class='date'>20:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day1work10' name='works' type='radio'>
+          <div class="relative">
+            <label for='day1work10'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Midnight Snack</span>
+            </label>
+            <span class='date'>23:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Section Two -->
+    <div role="tabpanel" class="tab-pane in fade" id="day2">
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/20
+      </h3>
+      <ul class="timeline">
+        <li class='work'>
+          <input class='radio' id='day2work1' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work1'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Breakfast</span>
+            </label>
+            <span class='date'>08:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work2' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work2'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：非科班阿宅之自我養成及創業之路</sub></p>
+            </label>
+            <span class='date'>09:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-五倍紅寶石 執行長 高見龍</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work3' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work3'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：人工智慧在醫療上的用途</sub></p>
+            </label>
+            <span class='date'>10:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-臺北醫學院 科技學院院長 李友專院長</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work4' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work4'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：行動開發的業障：一切都是假的！？</sub></p>
+            </label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-HackNTU iOS 講師 張景隆</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work5' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work5'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Lunch</span>
+            </label>
+            <span class='date'>12:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work6' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work6'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：踏上 RGB 的不歸路</sub></p>
+            </label>
+            <span class='date'>13:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者- "iCook 愛料理” 產品設計師 李佳臻</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work7' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work7'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：如何培養創新的能力，題目：創新三心法</sub></p>
+            </label>
+            <span class='date'>14:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-福爾福無限創意有限公司  CDO / 創辦人 陳忠郁</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work8' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work8'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：次世代產業革命-物聯網成功關鍵與應用創新</sub></p>
+            </label>
+            <span class='date'>15:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-Exosite 亞洲區行銷長 郁正德</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work9' name='works' type='radio' >
+          <div class="relative">
+            <label for='day2work9'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：Microchip’s Role in Connectivity and Security in IoT</sub></p>
+            </label>
+            <span class='date'>15:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-Microchip Technology 資深區域經理 何仁杰 (Calvin Ho)</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work10' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work10'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：超流暢無卡頓的沉浸式VR體驗</sub></p>
+            </label>
+            <span class='date'>16:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-AMD亞太區開發者技術支援經理 盧英瑞（Elliot Lu）</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work11' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work11'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：微軟智能聊天機器人</sub></p>
+            </label>
+            <span class='date'>17:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-YAHOO軟體工程師 董是明</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work12' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work12'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Dinner</span>
+            </label>
+            <span class='date'>18:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work13' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work13'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Laser Tag</span>
+            </label>
+            <span class='date'>18:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B5 Special Event area
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work14' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work14'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：食安區塊鏈-Fintech 魚翅科技</sub></p>
+            </label>
+            <span class='date'>19:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-臺大廖世偉</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work15' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work15'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：能源區塊鏈</sub></p>
+            </label>
+            <span class='date'>20:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-聯發科梁柏嵩</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B4 TechTalk area 2
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work16' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work16'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：醫療區塊鏈</sub></p>
+            </label>
+            <span class='date'>20:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-臺大廖世偉&鴻海陳俊嘉</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work17' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work17'>
+              <span class="label label-as-badge talk">Talk</span>
+              <span class="title">Tech talk</span>
+              <p><sub>主題：Gcoin區塊鏈</sub></p>
+            </label>
+            <span class='date'>21:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content subexist'>
+            <p>講者-林柏宇</p>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center B1 - B2 TechTalk area 1
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day2work18' name='works' type='radio'>
+          <div class="relative">
+            <label for='day2work18'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Midnight Snack</span>
+            </label>
+            <span class='date'>23:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane in fade" id="day3">
+      <h3 style="margin: 0px 0px -30px 0px; text-align: center;">
+        8/21
+      </h3>
+      <ul class='timeline'>
+        <li class='work'>
+          <input class='radio' id='day3work1' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work1'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Breakfast</span>
+            </label>
+            <span class='date'>08:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day3work2' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work2'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Hacking Ends (Project Submissions)</span>
+            </label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day3work3' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work3'>
+              <span class="label label-as-badge food">Food</span>
+              <span class="title">Lunch</span>
+            </label>
+            <span class='date'>11:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day3work4' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work4'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Expo & Judging</span>
+            </label>
+            <span class='date'>12:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day3work5' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work5'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Demo</span>
+            </label>
+            <span class='date'>15:00</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+            </p>
+          </div>
+        </li>
+        <li class='work'>
+          <input class='radio' id='day3work6' name='works' type='radio'>
+          <div class="relative">
+            <label for='day3work6'>
+              <span class="label label-as-badge act">Activity</span>
+              <span class="title">Closing and Awards Ceremony</span>
+            </label>
+            <span class='date'>16:30</span>
+            <span class='circle'></span>
+          </div>
+          <div class='content'>
+            <p>
+              <i class="material-icons">location_on</i>National Taiwan Sports Center 1F - A1 Main Area
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Panel End -->
+</body>
+</html>
