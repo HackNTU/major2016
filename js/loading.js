@@ -3,6 +3,7 @@ var pink = "#F581AB";
 $(document).ready(function() {
 
     console.log("ready");
+    $("#main-content").show();
 
     $("body").prepend(
         $("<div/>")
