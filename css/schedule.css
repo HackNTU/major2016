@@ -1,5 +1,6 @@
 
 body {
+  /*
   max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 5%;
@@ -7,11 +8,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.6em;
+  */
   /*color: #eee9dc;
 	background: #48b379;*/
 }
 
-.main {
+ main.mdl-layout__content{
+  background: #eaebed; 
+ }
+
+.main {	
+  width:80%;
+  margin-left: 10%;
   background: #eaebed;
   padding: 30px;
 }
@@ -211,6 +219,8 @@ label {
 @media screen and (max-width: 767px) {
 
   .main  {
+    width:100%;
+    margin-left: 0%;
     padding: 10px;
   }
 
@@ -312,8 +322,8 @@ label {
     margin-top: 20px;
 }
 .nav-pills > li > a {
-  height: 2.5rem;
-  line-height: 1.25rem;
+  height: 4.5rem;
+  line-height: 2.25rem;
   text-align: center;
   border: medium none;
   color: #fff;
