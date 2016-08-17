@@ -159,7 +159,7 @@ h2 {
 .content p {
 	max-height: 0;
 	color: transparent;
-	text-align: justify;
+	/*text-align: justify;*/
 	word-break: break-word;
 	hyphens: auto;
 	overflow: hidden;
@@ -237,7 +237,8 @@ label {
 		width: 85%;
 		font-size: 1.1em;
 		white-space: nowrap;
-		overflow-x: scroll;
+    /*overflow-x: scroll; */
+		overflow: hidden; 
 		/*display: block;*/
     margin-left: 10px;
 		/*transform: translateX(0px);*/
@@ -298,7 +299,7 @@ label {
 	}
 
   label > p {
-    overflow-x: hidden;
+    overflow: scroll;
     /*margin-right: 1% !important;*/
     line-height: 2rem;
   }
