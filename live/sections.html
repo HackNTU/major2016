@@ -53,6 +53,8 @@
     
     .line {
         stroke: #C70;
+        /* new */
+        stroke-width: 3px;
     }
     
     .line.hover {
@@ -214,7 +216,7 @@
                     pie, // 用來轉換資料給弧形用 d3.layout.pie()
                     arc, // 做弧形用 d3.svg.arc()
                     heading, // 標題
-                    colors = ['#FC0', '#EB0', '#DA0', '#C90', '#B80', '#AFA'], // 弧形用到的顏色
+                    colors = ['#F4F1BB', '#ED6A5A', '#9BC1BC', '#5CA4A9', '#2274A5', '#E7EB90'], // 弧形用到的顏色
                     pickColor, // 顏色選擇函式
                     reqId, // 註冊瀏覽器動畫用
                     count = 0, // 給動畫跑計數用
@@ -291,7 +293,9 @@
                         .text(function(d) {
                             return d.data.name;
                         })
-                        .style('font-size', radius * 0.06 + 'px');
+                        // .style('font-size', radius * 0.06 + 'px');
+                        .style('font-size', radius * 0.1 + 'px')
+                        .style('font-family', 'monospace');
 
                     vis.selectAll('g')
                         .append('svg:line')
