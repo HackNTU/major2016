@@ -1,8 +1,11 @@
 var pink = "#F581AB";
 
+$( "<style id='hideBeforeReady'>.mdl-layout { display: none; }</style>" ).appendTo( "head" );
+
 $(document).ready(function() {
 
     console.log("ready");
+    $("#hideBeforeReady").remove();
 
     $("body").prepend(
         $("<div/>")
